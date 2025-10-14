@@ -57,3 +57,46 @@ h1, h2, h3, h4 {
 .post h1 a, .post h1 a:visited {
     color: #000000;
 }
+
+.post-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* чтобы кнопка была справа */
+    margin-bottom: 10px;
+}
+
+.post-header .date {
+    color: #777;
+    font-size: 14px;
+}
+
+.post-header .edit-btn {
+    margin-left: 10px;
+}
+
+.post-header {
+    display: flex;
+    justify-content: flex-end; /* всё выравнивается справа */
+    margin-bottom: 10px;
+}
+
+.post-tools {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* расстояние между датой и кнопкой */
+}
+
+.post-tools .date {
+    color: #888;
+    font-size: 14px;
+}
+
+.post-tools .edit-btn {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.post-tools .edit-btn:hover {
+    background-color: #ddd;
+}

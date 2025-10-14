@@ -1,0 +1,14 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% if form.instance.pk %}
+        <h1>Редактировать пост</h1>
+    {% else %}
+        <h1>Новый пост</h1>
+    {% endif %}
+    <form method="POST" class="post-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Сохранить</button>
+    </form>
+{% endblock %}
